@@ -12,15 +12,15 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/start.bat?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/wallpaper.png?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/wallpaper.bat?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/loop.bat?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/vuong0809/AviRDP-0/raw/main/launcher/adityardp.exe -OutFile "Ganti Password.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/launcher/Node.js.lnk?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/vuong0809/AviRDP-0/main/launcher/Visual%20Studio%202019.lnk?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/vuong0809/AviRDP-0/raw/main/launcher/adityardp.exe?token=GHSAT0AAAAAABV7PIROFHLDXE2AC23QHB2WYWLT7JQ -OutFile "Ganti Password.exe"
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
